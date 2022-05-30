@@ -43,6 +43,11 @@ QString DAOLib::getDatabaseName()
     return dbName;
 }
 
+QSqlDatabase DAOLib::getDatabaseConnection()
+{
+    return dbConn;
+}
+
 void DAOLib::closeConnection()
 {
     dbConn.close();

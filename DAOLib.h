@@ -1,8 +1,8 @@
 #pragma once
 
 #include <QSqlDatabase>
-#include <QSqlError>>
-#include <QSqlQuery>>
+#include <QSqlError>
+#include <QSqlQuery>
 #include <QMessageBox>
 
 #include "DAOLib_global.h"
@@ -14,6 +14,8 @@ public:
                                   const QString& databaseName);
 
     static QString getDatabaseName();
+
+    static QSqlDatabase getDatabaseConnection();
 
     static void closeConnection();
 
